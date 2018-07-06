@@ -1,0 +1,21 @@
+//
+//  Pacman-Prefix.pch
+//  Pacman
+//
+//  Created by Vivardhan Kanoria on 6/13/18.
+//  Copyright © 2018 VivardhanKanoria. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef Pacman_Prefix_pch
+#define Pacman_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __cplusplus
+#import <opencv2/core/core.hpp>
+#import <opencv2/highgui/highgui.hpp>
+#endif
+
+#endif /* Pacman_Prefix_pch */

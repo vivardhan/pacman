@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B9C448520D22E3200ED2AF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C448420D22E3200ED2AF4 /* AppDelegate.m */; };
+		9B9C448720D22E3500ED2AF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C448620D22E3500ED2AF4 /* Assets.xcassets */; };
+		9B9C448A20D22E3500ED2AF4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C448820D22E3500ED2AF4 /* MainMenu.xib */; };
+		9B9C448D20D22E3500ED2AF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C448C20D22E3500ED2AF4 /* main.m */; };
+		9B9C449920D23D9700ED2AF4 /* VideoCaptureViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C449820D23D9700ED2AF4 /* VideoCaptureViewController.mm */; };
+		9B9C449C20D23DDD00ED2AF4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C449B20D23DDD00ED2AF4 /* AVFoundation.framework */; };
+		9B9C449E20D23DF100ED2AF4 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C449D20D23DF100ED2AF4 /* opencv2.framework */; };
+		9B9C44A320D2430200ED2AF4 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C44A220D2430200ED2AF4 /* CoreMedia.framework */; };
+		9B9C44AD20D2436900ED2AF4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C44AC20D2436900ED2AF4 /* Accelerate.framework */; };
+		9B9C44AE20D2437A00ED2AF4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B9C44AA20D2434600ED2AF4 /* libz.tbd */; };
+		9B9C44B220D2D36F00ED2AF4 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9B9C44B120D2D36E00ED2AF4 /* ViewController.mm */; };
+		9B9C44ED20D9C33100ED2AF4 /* pacman.html in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C44EB20D9C33100ED2AF4 /* pacman.html */; };
+		9B9C44EE20D9C33100ED2AF4 /* pacman.swf in Resources */ = {isa = PBXBuildFile; fileRef = 9B9C44EC20D9C33100ED2AF4 /* pacman.swf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9B9C448020D22E3200ED2AF4 /* Pacman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pacman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9C448320D22E3200ED2AF4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9B9C448420D22E3200ED2AF4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9B9C448620D22E3500ED2AF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B9C448920D22E3500ED2AF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9B9C448B20D22E3500ED2AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9C448C20D22E3500ED2AF4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9B9C448E20D22E3500ED2AF4 /* Pacman.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pacman.entitlements; sourceTree = "<group>"; };
+		9B9C449720D23D9700ED2AF4 /* VideoCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoCaptureViewController.h; sourceTree = "<group>"; };
+		9B9C449820D23D9700ED2AF4 /* VideoCaptureViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoCaptureViewController.mm; sourceTree = "<group>"; };
+		9B9C449B20D23DDD00ED2AF4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9B9C449D20D23DF100ED2AF4 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../tangible/vision/opencv/opencv2.framework; sourceTree = "<group>"; };
+		9B9C449F20D23EB900ED2AF4 /* Pacman-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pacman-Prefix.pch"; sourceTree = "<group>"; };
+		9B9C44A020D242F300ED2AF4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		9B9C44A220D2430200ED2AF4 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		9B9C44A420D2431400ED2AF4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9B9C44A620D2432800ED2AF4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9B9C44A820D2433700ED2AF4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9B9C44AA20D2434600ED2AF4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		9B9C44AC20D2436900ED2AF4 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9B9C44B020D2D36E00ED2AF4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9B9C44B120D2D36E00ED2AF4 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		9B9C44EB20D9C33100ED2AF4 /* pacman.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = pacman.html; path = ../../../../Desktop/pacman/pacman.html; sourceTree = "<group>"; };
+		9B9C44EC20D9C33100ED2AF4 /* pacman.swf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pacman.swf; path = ../../../../Desktop/pacman/pacman.swf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B9C447D20D22E3200ED2AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9C449E20D23DF100ED2AF4 /* opencv2.framework in Frameworks */,
+				9B9C44AD20D2436900ED2AF4 /* Accelerate.framework in Frameworks */,
+				9B9C449C20D23DDD00ED2AF4 /* AVFoundation.framework in Frameworks */,
+				9B9C44A320D2430200ED2AF4 /* CoreMedia.framework in Frameworks */,
+				9B9C44AE20D2437A00ED2AF4 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B9C447720D22E3200ED2AF4 = {
+			isa = PBXGroup;
+			children = (
+				9B9C448220D22E3200ED2AF4 /* Pacman */,
+				9B9C448120D22E3200ED2AF4 /* Products */,
+				9B9C449A20D23DDD00ED2AF4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B9C448120D22E3200ED2AF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C448020D22E3200ED2AF4 /* Pacman.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B9C448220D22E3200ED2AF4 /* Pacman */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C44EA20D9BFD500ED2AF4 /* resources */,
+				9B9C44B020D2D36E00ED2AF4 /* ViewController.h */,
+				9B9C44B120D2D36E00ED2AF4 /* ViewController.mm */,
+				9B9C449620D23D9700ED2AF4 /* VideoCapture */,
+				9B9C448320D22E3200ED2AF4 /* AppDelegate.h */,
+				9B9C448420D22E3200ED2AF4 /* AppDelegate.m */,
+				9B9C448620D22E3500ED2AF4 /* Assets.xcassets */,
+				9B9C448820D22E3500ED2AF4 /* MainMenu.xib */,
+				9B9C448B20D22E3500ED2AF4 /* Info.plist */,
+				9B9C448C20D22E3500ED2AF4 /* main.m */,
+				9B9C448E20D22E3500ED2AF4 /* Pacman.entitlements */,
+				9B9C449F20D23EB900ED2AF4 /* Pacman-Prefix.pch */,
+			);
+			path = Pacman;
+			sourceTree = "<group>";
+		};
+		9B9C449620D23D9700ED2AF4 /* VideoCapture */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C449720D23D9700ED2AF4 /* VideoCaptureViewController.h */,
+				9B9C449820D23D9700ED2AF4 /* VideoCaptureViewController.mm */,
+			);
+			path = VideoCapture;
+			sourceTree = "<group>";
+		};
+		9B9C449A20D23DDD00ED2AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C44AA20D2434600ED2AF4 /* libz.tbd */,
+				9B9C44AC20D2436900ED2AF4 /* Accelerate.framework */,
+				9B9C44A820D2433700ED2AF4 /* CoreImage.framework */,
+				9B9C44A620D2432800ED2AF4 /* Foundation.framework */,
+				9B9C44A420D2431400ED2AF4 /* AppKit.framework */,
+				9B9C44A220D2430200ED2AF4 /* CoreMedia.framework */,
+				9B9C44A020D242F300ED2AF4 /* CoreVideo.framework */,
+				9B9C449D20D23DF100ED2AF4 /* opencv2.framework */,
+				9B9C449B20D23DDD00ED2AF4 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B9C44EA20D9BFD500ED2AF4 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9B9C44EB20D9C33100ED2AF4 /* pacman.html */,
+				9B9C44EC20D9C33100ED2AF4 /* pacman.swf */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B9C447F20D22E3200ED2AF4 /* Pacman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B9C449120D22E3500ED2AF4 /* Build configuration list for PBXNativeTarget "Pacman" */;
+			buildPhases = (
+				9B9C447C20D22E3200ED2AF4 /* Sources */,
+				9B9C447D20D22E3200ED2AF4 /* Frameworks */,
+				9B9C447E20D22E3200ED2AF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pacman;
+			productName = Pacman;
+			productReference = 9B9C448020D22E3200ED2AF4 /* Pacman.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B9C447820D22E3200ED2AF4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = VivardhanKanoria;
+				TargetAttributes = {
+					9B9C447F20D22E3200ED2AF4 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 9B9C447B20D22E3200ED2AF4 /* Build configuration list for PBXProject "Pacman" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B9C447720D22E3200ED2AF4;
+			productRefGroup = 9B9C448120D22E3200ED2AF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B9C447F20D22E3200ED2AF4 /* Pacman */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B9C447E20D22E3200ED2AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9C44EE20D9C33100ED2AF4 /* pacman.swf in Resources */,
+				9B9C448720D22E3500ED2AF4 /* Assets.xcassets in Resources */,
+				9B9C44ED20D9C33100ED2AF4 /* pacman.html in Resources */,
+				9B9C448A20D22E3500ED2AF4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B9C447C20D22E3200ED2AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B9C44B220D2D36F00ED2AF4 /* ViewController.mm in Sources */,
+				9B9C448D20D22E3500ED2AF4 /* main.m in Sources */,
+				9B9C449920D23D9700ED2AF4 /* VideoCaptureViewController.mm in Sources */,
+				9B9C448520D22E3200ED2AF4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B9C448820D22E3500ED2AF4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B9C448920D22E3500ED2AF4 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B9C448F20D22E3500ED2AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9B9C449020D22E3500ED2AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9B9C449220D22E3500ED2AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SN2C2R8573;
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../tangible/vision/opencv;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$SRCROOT/Pacman/Pacman-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$SRCROOT/../tangible/vision/VisionPlatform/src/**",
+					$SRCROOT/../tangible/vision/VisionPlatform/include,
+				);
+				INFOPLIST_FILE = Pacman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivardhan.Pacman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9B9C449320D22E3500ED2AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = SN2C2R8573;
+				FRAMEWORK_SEARCH_PATHS = $SRCROOT/../tangible/vision/opencv;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$SRCROOT/Pacman/Pacman-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$SRCROOT/../tangible/vision/VisionPlatform/src/**",
+					$SRCROOT/../tangible/vision/VisionPlatform/include,
+				);
+				INFOPLIST_FILE = Pacman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vivardhan.Pacman;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B9C447B20D22E3200ED2AF4 /* Build configuration list for PBXProject "Pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9C448F20D22E3500ED2AF4 /* Debug */,
+				9B9C449020D22E3500ED2AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B9C449120D22E3500ED2AF4 /* Build configuration list for PBXNativeTarget "Pacman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B9C449220D22E3500ED2AF4 /* Debug */,
+				9B9C449320D22E3500ED2AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B9C447820D22E3200ED2AF4 /* Project object */;
+}
